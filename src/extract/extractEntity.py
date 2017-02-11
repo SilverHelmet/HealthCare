@@ -33,7 +33,9 @@ def parse_ttl(ttl):
     parts = ttl.split("\t")
     return parts
 
-    
+def parse_label(label):
+    r = label.rfind('')
+    return label[1:r]
 
 if __name__ == "__main__":
     print parse_ttl('<Smoky_Robin>	<isPreferredMeaningOf>	"Smoky Robin"@eng .')
@@ -64,7 +66,7 @@ if __name__ == "__main__":
             continue
 
         parts = parse_ttl(line)
-        label = parts[2]
+        label = parse_label(parts[2])
         for term in terms:
             if term.startswith(label) or label.startswith(term):
                 fuzzy_labels.add(parts[0])
