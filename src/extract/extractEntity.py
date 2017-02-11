@@ -37,6 +37,17 @@ def parse_label(label):
     r = label.rfind('"')
     return label[1:r]
 
+def is_prefix(term1, term2):
+    term1 = term1.split(" ")
+    term2 = term2.split(" ")
+    if len(term1) > len(term2):
+        return False
+    for i, t in enumerate(term1):
+        if term2[i] != t:
+            return False
+    return True
+    
+
 if __name__ == "__main__":
     # print parse_label(parse_ttl('<Acute_gpericarditis>	<isPreferredMeaningOf>	"Acute pericarditis"@eng .')[2])
     data_file = sys.argv[1]
@@ -68,12 +79,12 @@ if __name__ == "__main__":
         parts = parse_ttl(line)
         label = parse_label(parts[2])
         for term in terms:
-            if term.startswith(label) or label.startswith(term):
+            if isPrefix(term, label) or isPrefix(term, label):
                 fuzzy_labels.add(parts[0])
-                print "add fuzzy label %s" %parts[0]
+                print "add fuzzy entity %s label = %s" %(parts[0], label)
             if term == label:
                 exactly_labels.add(parts[0])
-                print "add exact label %s" %parts[0]
+                print "add exact entity %s label = %s" %(parts[0], label)
 
     for label in sorted(exactly_labels):
         out_exact.write(label + "\n")
