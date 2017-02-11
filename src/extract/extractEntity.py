@@ -79,7 +79,7 @@ if __name__ == "__main__":
         parts = parse_ttl(line)
         label = parse_label(parts[2])
         for term in terms:
-            if isPrefix(term, label) or isPrefix(term, label):
+            if is_prefix(term, label) or is_prefix(term, label):
                 fuzzy_labels.add(parts[0])
                 print "add fuzzy entity %s label = %s" %(parts[0], label)
             if term == label:
