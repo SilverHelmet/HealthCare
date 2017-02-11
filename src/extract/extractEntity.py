@@ -20,14 +20,10 @@ def find_term(ttl, st):
         ed += 1
         if ttl[ed-1] == end_char:
             break
-    print "1", st, ed
-    print '-%s-' %ttl[ed]
     while ed < length and ttl[ed] != " ":
         ed += 1
-    print "2", st, ed
     while ed > st and ttl[ed-1] == " ":
         ed -= 1
-    print '3', st, ed
     return st, ed
     
     
@@ -35,6 +31,7 @@ def find_term(ttl, st):
 def parse_ttl(ttl):
     ttl = ttl[:-2]
     parts = ttl.split("\t")
+    return parts
 
     
 
@@ -65,7 +62,7 @@ if __name__ == "__main__":
         line = line.strip()
         if line == "":
             continue
-            
+
         parts = parse_ttl(line)
         label = parts[2]
         for term in terms:
