@@ -1,0 +1,3 @@
+<http://dbpedia.org/resource/Acute_pericarditis>
+<http://dbpedia.org/resource/Angina_pectoris>
+<http://dbpedia.org/resource/Pulmonary_embolism>

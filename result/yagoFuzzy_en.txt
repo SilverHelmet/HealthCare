@@ -1,0 +1,14 @@
+<Acute_pericarditis>
+<Arterial_insufficiency_ulcer>
+<Atherosclerosis_(journal)>
+<Cardiac_Arrest_Registry_to_Enhance_Survival>
+<Cerebral_infarction>
+<Heart_failure_cells>
+<Hypertensive_nephropathy>
+<Hypertensive_heart_disease>
+<Ischaemic_heart_disease>
+<Paroxysmal_tachycardia>
+<Peripartum_cardiomyopathy>
+<Portal_vein_thrombosis>
+<Sydenham's_chorea>
+

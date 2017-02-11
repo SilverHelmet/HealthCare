@@ -1,0 +1,9 @@
+<Acute_pericarditis>
+<Atherosclerosis_(journal)>
+<Cerebral_infarction>
+<Hypertensive_nephropathy>
+<Ischaemic_heart_disease>
+<Paroxysmal_tachycardia>
+<Portal_vein_thrombosis>
+<Sydenham's_chorea>
+<Hypertensive_heart_disease>
