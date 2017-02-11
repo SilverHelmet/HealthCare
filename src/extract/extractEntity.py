@@ -56,7 +56,7 @@ if __name__ == "__main__":
             continue
         terms.add(line)
     
-    for cnt, line in file(label_file):
+    for cnt, line in enumerate(file(label_file)):
         if cnt % 100000:
             print "\tcnt = %d" %cnt
         if line.startwith("#") or line.startswith("@"):
@@ -78,7 +78,7 @@ if __name__ == "__main__":
     for label in sorted(fuzzy_labels):
         out_fuzzy.write(label + '\n')
     out_fuzzy.close()
-    
+
 
 
         
