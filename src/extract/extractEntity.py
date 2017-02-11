@@ -34,11 +34,11 @@ def parse_ttl(ttl):
     return parts
 
 def parse_label(label):
-    r = label.rfind('')
+    r = label.rfind('"')
     return label[1:r]
 
 if __name__ == "__main__":
-    print parse_ttl('<Smoky_Robin>	<isPreferredMeaningOf>	"Smoky Robin"@eng .')
+    # print parse_label(parse_ttl('<Acute_gpericarditis>	<isPreferredMeaningOf>	"Acute pericarditis"@eng .')[2])
     data_file = sys.argv[1]
     label_file = sys.argv[2]
     exactly_match_file = sys.argv[3]
