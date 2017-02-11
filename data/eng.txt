@@ -1,0 +1,87 @@
+Acute rheumatic fever
+Rheumatic fever without mention of heart invoIvement
+Rheumatic fever with heart involvement
+Rheumatic chorea
+Chronic rheumatic heart diseases
+Rheumatic mitral valve diseases
+Rheumatic aortic vaIve diseases
+Rheumatic tricuspid valve diseases
+Multiple value diseases
+Other rheumatic heart diseases
+Hypertensivediseases
+Essential (primary) hypertension
+Hypertensive heart diseases
+Hypertensive renal disease
+Hypertensive heart and renal diseases
+Secondary hypertension
+Ischaemic heart diseases
+Angina pectoris
+Acute myocardial infarction
+Subsequent myocardial infarction
+Certain current complications following acute myocardial infarction
+Other acute ischaemic heart diseases
+Chronic ischaemic heart disease
+Pulmonary heart disease and diseases of pulmonary circulation
+Pulmonary embolism
+Other pulmonary heart diseases
+Other diseases of pulmonary vessels
+Other forms of heart disease
+Acute pericarditis
+Other dieases of pericardium
+Pericarditis in diseases classified elsewhere
+Acute and subacute endocarditis
+Nonrheumatic mitral valve disorders
+Nonrheumatic aortic valve disorders
+Nonrheumatic tricuspid valve disorders
+Pulmonary valve disorders
+Endocarditis, valve unspecified
+Endocarditis and heart valve disorders, in diseases classified elsewhere
+Acute myocarditis
+Myocarditis in diseases classified elsewhere
+Cardiomyopathy
+Cardiomyopathy in diseases classified elsewhere
+Atrioventricular and left bundle-branch block
+Other conduction disorders
+Cardiac arrest
+Paroxysmal tachycardia
+Atrial fibrillation and flutter
+Other cardiac arrhythmias
+Heart failure
+Complications and ill-defined descriptions of heart disease
+Other heart disorders in diseases classified elsewhere
+Cerebrovascular diseases
+Subarachnoid haemorrhage
+Intracerebral haemorrhage
+Other nontraumatic intracranial haemorrhage
+Cerebral infarction
+Stroke, not specified as haemorrhage or infarction
+Occlusion and stenosis of precerebral arteries,not resulting in cerebral infarction
+Occlusion and stenosis of cerebral arteries, not resulting in cerebral infarction
+Other cerebrovascular diseases
+Cerebrovacular disorders in diseases classified elsewhere
+Sequelae of cerebrovascular disease
+Diseases of arteries, arterioles and capillaries
+Atherosclerosis
+Aortic aneurysm and dissection
+Other aneurysm
+Other peripheral vascular diseases
+Arterial embolism and thrombosis
+Other disorders of arteries and arterioles
+Diseases of capillaries
+Disorders of arteries, arterioles and capillaries in diseases I79* classified elsewhere
+Diseases of veins, lymphatic vessels and lymph nodes, not elsewhere classified
+Phlebitis and thrombophlebitis
+Portal vein thrombosis
+Other venous embolism and thrombosis
+Varicose veins of lower extremities
+Haemorrhoids
+Oesophageal varices
+Varicose veins of other sites
+Other disorders of veins
+Nonspecific lymphadenitis
+Other noninfective disorders of lymphatic vessels and lymphnodes
+Other and unspecified disorders of the circulatory system
+Hypotension
+Postprocedural disorders of circulatory system, not elsewhere classified
+Other disorders of circulatory system in diseases classified elsewhere
+Other and unspecified disorders of circulatory system
