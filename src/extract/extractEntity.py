@@ -68,8 +68,10 @@ if __name__ == "__main__":
         for term in terms:
             if term.startswith(label) or label.startswith(term):
                 fuzzy_labels.add(parts[0])
+                print "add fuzzy label %s" %parts[0]
             if term == label:
                 exactly_labels.add(parts[0])
+                print "add exact label %s" %parts[0]
 
     for label in sorted(exactly_labels):
         out_exact.write(label + "\n")
