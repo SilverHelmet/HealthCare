@@ -78,6 +78,7 @@ if __name__ == "__main__":
     for label in sorted(fuzzy_labels):
         out_fuzzy.write(label + '\n')
     out_fuzzy.close()
+    
 
 
         
