@@ -8,9 +8,9 @@ Rheumatic aortic vaIve diseases
 Rheumatic tricuspid valve diseases
 Multiple value diseases
 Other rheumatic heart diseases
-Hypertensivediseases
+Hypertensive diseases
 Essential (primary) hypertension
-Hypertensive heart diseases
+Hypertensive heart disease
 Hypertensive renal disease
 Hypertensive heart and renal diseases
 Secondary hypertension

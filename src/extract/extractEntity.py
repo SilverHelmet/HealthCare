@@ -33,6 +33,15 @@ def parse_ttl(ttl):
     parts = ttl.split("\t")
     return parts
 
+def parse_ttl_2(ttl):
+    st = 0
+    parts = []
+    for i in range(3):
+        st, ed = find_term(ttl, st)
+        parts.append(ttl[st:ed])
+        st = ed
+    return parts
+
 def parse_label(label):
     r = label.rfind('"')
     return label[1:r]
@@ -49,7 +58,7 @@ def is_prefix(term1, term2):
     
 
 if __name__ == "__main__":
-    # print parse_label(parse_ttl('<Acute_gpericarditis>	<isPreferredMeaningOf>	"Acute pericarditis"@eng .')[2])
+    print parse_ttl_2('<http://dbpedia.org/resource/AccessibleComputing> <http://www.w3.org/2000/01/rdf-schema#label> "AccessibleComputing"@en .')
     data_file = sys.argv[1]
     label_file = sys.argv[2]
     exactly_match_file = sys.argv[3]
@@ -76,7 +85,8 @@ if __name__ == "__main__":
         if line == "":
             continue
 
-        parts = parse_ttl(line)
+        # parts = parse_ttl(line)
+        parts = parse_ttl_2(line)
         label = parse_label(parts[2])
         for term in terms:
             if is_prefix(term, label) or is_prefix(term, label):
