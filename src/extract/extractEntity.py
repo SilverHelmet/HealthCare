@@ -59,7 +59,7 @@ if __name__ == "__main__":
     for cnt, line in enumerate(file(label_file)):
         if cnt % 100000:
             print "\tcnt = %d" %cnt
-        if line.startwith("#") or line.startswith("@"):
+        if line.startswith("#") or line.startswith("@"):
             continue
         line = line.strip()
         
