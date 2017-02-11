@@ -15,30 +15,31 @@ def find_term(ttl, st):
     else:
         end_char = " "
     ed = st + 1
+    
     while ed < length:
         ed += 1
         if ttl[ed-1] == end_char:
             break
+    print "1", st, ed
+    print '-%s-' %ttl[ed]
     while ed < length and ttl[ed] != " ":
         ed += 1
+    print "2", st, ed
     while ed > st and ttl[ed-1] == " ":
         ed -= 1
+    print '3', st, ed
     return st, ed
     
     
 
 def parse_ttl(ttl):
-    st = 0
-    parts = []
-    for i in range(3):
-        st, ed = find_term(ttl, st)
-        parts.append(ttl[st:ed])
-        st = ed
-    return parts
+    ttl = ttl[:-2]
+    parts = ttl.split("\t")
 
     
 
 if __name__ == "__main__":
+    print parse_ttl('<Smoky_Robin>	<isPreferredMeaningOf>	"Smoky Robin"@eng .')
     data_file = sys.argv[1]
     label_file = sys.argv[2]
     exactly_match_file = sys.argv[3]
@@ -57,12 +58,14 @@ if __name__ == "__main__":
         terms.add(line)
     
     for cnt, line in enumerate(file(label_file)):
-        if cnt % 100000:
+        if cnt % 100000 == 0:
             print "\tcnt = %d" %cnt
         if line.startswith("#") or line.startswith("@"):
             continue
         line = line.strip()
-        
+        if line == "":
+            continue
+            
         parts = parse_ttl(line)
         label = parts[2]
         for term in terms:
